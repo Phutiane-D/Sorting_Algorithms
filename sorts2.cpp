@@ -39,16 +39,16 @@ vector<int> Bubble_sort_escape(vector<int> vec){
     int i = vec.size()-1;
     bool sorted = true;
     while(i > -1 && sorted){
-        bool swopped = false;
+        bool swapped = false;
         for(int j = 0; j < i; j++){
             if(vec[j]>vec[j+1]){
                 int temp = vec[j];
                 vec[j] = vec[j+1];
                 vec[j+1] = temp; 
-                swopped = true; 
+                swapped = true; 
             }
         }
-        if(!swopped){
+        if(!swapped){
             sorted = false;
         }
         else{
